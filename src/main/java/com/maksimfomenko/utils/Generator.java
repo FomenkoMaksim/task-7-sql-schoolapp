@@ -11,7 +11,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Generator {
     private static final char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
@@ -101,27 +100,11 @@ public class Generator {
 
     public void insertData(Connection connection) throws SQLException {
         for (Group group : groupList) {
-            String sqlQuery = "INSERT INTO school.groups VALUES (" + group.getGroupName() + ");";
+            String sqlQuery = "INSERT INTO school.groups VALUES (" + group.getName() + ");";
             try (Statement st = connection.createStatement()) {
                 st.executeQuery(sqlQuery);
                 connection.close();
             }
         }
-    }
-
-    public String getGroupName() {
-        return generateGroupName();
-    }
-
-    public List<Group> getGroups() {
-        return generateGroups();
-    }
-
-    public List<Course> getCourses() {
-        return generateCourses();
-    }
-
-    public List<Student> getStudents() {
-        return students;
     }
 }

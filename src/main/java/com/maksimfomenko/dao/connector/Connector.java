@@ -1,4 +1,4 @@
-package com.maksimfomenko.dao;
+package com.maksimfomenko.dao.connector;
 
 import java.io.Closeable;
 import java.sql.Connection;

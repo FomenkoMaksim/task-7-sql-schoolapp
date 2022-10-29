@@ -20,21 +20,4 @@ public class SqlUtil {
             st.executeQuery(sqlQuery);
         }
     }
-
-//    private String getSqlQuery(String sqlFileName) throws IOException {
-//        StringBuilder sb = new StringBuilder();
-//        String text = Files.readString(Path.of(sqlFileName));
-//
-////        String[] array = text.split("(\\r\\n|\\n\\r|\\r|\\n)");
-////
-////        for (String s: array) {
-////            if (!s.contains("--")) {
-////                sb.append(s).append(" ");
-////            } else {
-////                sb.append(s, 0, s.indexOf("--"));
-////            }
-////        }
-////        return sb.toString();
-//        return text;
-//    }
 }

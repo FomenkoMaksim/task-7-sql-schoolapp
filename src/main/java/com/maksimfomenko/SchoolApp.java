@@ -1,6 +1,6 @@
 package com.maksimfomenko;
 
-import com.maksimfomenko.dao.DBConnector;
+import com.maksimfomenko.dao.connector.DBConnector;
 import com.maksimfomenko.utils.Generator;
 import com.maksimfomenko.utils.ResourceUtil;
 import com.maksimfomenko.utils.SqlUtil;
@@ -29,7 +29,6 @@ public class SchoolApp {
         connector.close();
 
         //  loop in menu
-
     }
 
     public static void main(String[] args) throws IOException, SQLException {

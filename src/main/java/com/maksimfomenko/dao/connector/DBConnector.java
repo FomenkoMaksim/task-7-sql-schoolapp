@@ -1,4 +1,4 @@
-package com.maksimfomenko.dao;
+package com.maksimfomenko.dao.connector;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
